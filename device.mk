@@ -61,7 +61,11 @@ PRODUCT_PACKAGES += \
  PRODUCT_PACKAGES += \
     BluetoothQti
 
-# Google Camera
+# Custom init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.juice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.juice.rc
+
+# Google Photos
 PRODUCT_PACKAGES += \
     GoogleCameraGo
     
